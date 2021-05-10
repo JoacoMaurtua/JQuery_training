@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+#container{
+  margin-left: 42%;
+  margin-top: 10%;
+  width: 970px;
+}
+
+h1{
+  display: inline-block;
+  text-align: center;
+  margin-left: 6%;
+  margin-bottom: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 26px;
+}
+
+img{
+  display: block;
+  width: 30%;
+  margin: 5px;
+}

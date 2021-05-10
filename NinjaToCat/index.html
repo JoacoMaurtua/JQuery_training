@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>NinjaToCat</title>
+  <script>
+    $(document).ready(function(){
+      var result = "";
+        for(var i=0; i<=4; i++){
+            result += '<img src="images/ninja'+i+'.png" data-src="images/cat'+i+'.png">'
+        }
+        
+        $(document).ready(function(){
+            $("#container").append(result);
+            $("img").click(function(){
+               
+                var src = $(this).attr("src"); //establece el atributo src al elemento seleccionado
+                var dataSrc = $(this).attr("data-src"); //establece el atributo al elemento seleccionado
+
+                $(this).attr("src", dataSrc); //metodo como setter
+                $(this).attr("data-src", src); //metodo como setter <img data-src = "arc"
+                console.log(src);
+            });
+        });
+    });
+  </script>
+</head>
+<body>
+  <div id="container">
+    <h1>Ninja to Cat</h1>
+  </div>
+  
+</body>
+</html>
