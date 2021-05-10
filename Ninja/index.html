@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://raw.githubusercontent.com/wilq32/jqueryrotate/master/jQueryRotate.js"></script>
+
+  <script src="https://kit.fontawesome.com/26beac1ff1.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Ninja desvanecete!</title>
+  <script>
+      $(document).ready(function(){
+
+          $("img").click(function(){
+                $(this).hide("slow");
+          });
+
+          $("button").click(function(){
+              $("img").show();
+          });
+      });
+  </script>
+</head>
+<body>
+  <div class="container">
+      <h2>JQuery - asignment 1</h2>
+      <div class="row first">
+          <img class="col-md-3 img" src="images/one.jpg"></img>
+          <img class="col-md-3 img" src="images/two.jpg"></img>
+          <img class="col-md-3 img" src="images/tree.jpg"></img>
+          <img class="col-md-3 img" src="images/four.jpg"></img>
+      </div>
+      <div class="row second">
+          <img class="col-md-3 img" src="images/five.jpg"></img>
+          <img class="col-md-3 img" src="images/six.jpg"></img>
+          <img class="col-md-3 img" src="images/seven.jpg"></img>
+          <img class="col-md-3 img" src="images/eight.jpg"></img>
+      </div>
+      <button>Restore</button>
+  </div>
+
+</body>
+</html>
+
